@@ -1,10 +1,16 @@
 body {
+
+
+
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    background-color: var(--background-color);
+    background-color: $background-color ;
+    margin: 0 auto;
+
+  
 }
 
 h1,
@@ -32,3 +38,27 @@ img {
     padding-bottom: 94px;
 
 }
+
+  .container {
+max-width: 480px;
+align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    box-sizing: content-box;
+
+    outline: auto;
+    
+
+      
+        //   width: 1200px
+   
+         
+     
+      // width: 1200px;
+      // height: auto;
+      // padding-left: 15px;
+      // padding-right: 15px;
+      // margin: 0 auto;
+  }
