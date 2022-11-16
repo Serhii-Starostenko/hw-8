@@ -1,0 +1,75 @@
+.benefits--container {
+
+    width: 1200px;
+    height: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.benefits--title {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.benefits--list {
+    display: flex;
+    padding-left: 0px;
+}
+
+
+.benefits--icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: rgba(245, 244, 250, 1);
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+
+}
+
+.benefits--card {
+    list-style: none;
+    margin-right: 30px;
+
+&-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $title-text-color ;
+        margin-bottom: 10px;
+
+    }
+
+        &-description {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: $primary-text-color;
+    
+        }
+
+               &:last-child {
+                    margin-right: 0px;
+                }
+}
+
+
+

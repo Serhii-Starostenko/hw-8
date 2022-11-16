@@ -1,0 +1,36 @@
+.logo--color {
+    color: var(--title-text-color);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    &:focus {
+            color: $title-text-color;
+            background-color: #fff;
+        }
+}
+
+
+.footer--logo-color {
+    color: $background-color ;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+
+    &:focus {
+        background-color: #2F303A;
+
+    }
+}
