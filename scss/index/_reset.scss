@@ -30,17 +30,17 @@ img {
 
 .section {
     height: auto;
-    padding: 94px 0px;
+    padding: 60px 0px;
 }
 
-.section:nth-child(3) {
-    padding-top: 0px;
-    padding-bottom: 94px;
+// .section:nth-child(3) {
+//     padding-top: 0px;
+//     padding-bottom: 60px;
 
-}
+// }
 
   .container {
-max-width: 480px;
+
 align-items: center;
     justify-content: center;
     padding-left: 15px;
@@ -50,6 +50,10 @@ align-items: center;
 
     outline: auto;
     
+    @media screen and (min-width:480px)  {
+        width: 480px;
+        
+    }
 
       
         //   width: 1200px
@@ -61,4 +65,7 @@ align-items: center;
       // padding-left: 15px;
       // padding-right: 15px;
       // margin: 0 auto;
+  }
+  .none{
+    display: none;
   }
