@@ -21,21 +21,24 @@
         <div class="container" >  
         <nav class="headers--cont-position">
         <a class="logo--color" href="./index.html"> <span class="logo"> Web</span>Studio</a>
-        <svg width="16px" height="24px" >
-            <use href="./images/icons.svg#menu" >
-            </use>
-        </svg>
-        <svg width="19px" height="19px"  >
-            <use href="./images/icons.svg#close">
-            </use>
-        </svg>
-           <div class="header--menu-container " >
+
+<button type="button" data-menu-button class="headers--nav-button is-open">
+    <svg width="40px" height="40px" aria-label="Переключатель мобильного меню" >  
+        <use  class="icon-menu" href="./images/icons.svg#menu">
+        </use>
+        <use  class="icon-crose" href="./images/icons.svg#crose">
+        </use>
+    </svg>
+
+</button>
+           <div data-menu class="headers--menu-container" >
 
             <ul class="headers--menu">
                 <li class="headers--menu-list"><a class="link--active" href="./index.html">Студия</a> </li>
                 <li class="headers--menu-list"><a class="headers--link" href="./portfolio.html">Портфолио</a> </li>
                 <li class="headers--menu-list"><a class="headers--link" href="#">Контакты</a> </li>
             </ul>
+             
             </nav>
             <ul class="contacts">
                 <li class="contacts--list"> <a class="contact--mail" href="mailto:info@devstudio.com;">
@@ -48,7 +51,9 @@
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
+            
            </div>
+            
     </div>
     </header>
 <main>
@@ -434,11 +439,12 @@
 </div>
 </div>
 <script src="js/modal.js"></script>
+<script src="js/menu.js" ></script>
 </body>
 
 </html>
 
 
 
-
+  
 

@@ -15,10 +15,7 @@
   // margin: 0 auto;
 
 
-  .header--menu-container{
-    display: none;
-  }
-
+ 
 .headers--menu {
     display: flex;
     margin-left: 93px;
@@ -103,6 +100,7 @@
 
 .headers--cont-position {
     display: flex;
+    justify-content: space-between;
     margin: 0px;
 }
 
@@ -183,4 +181,45 @@
 
 }
 
+.headers--nav-button{
+    display:inline-flex ;
+  align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+ &:hover
+    ,&:focus{
+       color: $accent-text-color; 
 
+       
+}
+
+}
+.icon-crose{
+fill: currentColor;
+}
+.icon-menu
+{
+    fill: currentColor;
+}
+
+.headers--nav-button .icon-crose{
+    display: none;
+}
+.headers--nav-button.is-open .icon-crose{
+    display: block;
+}
+.headers--nav-button.is-open .icon-menu{
+    display: none;
+}
+
+.headers--menu-container {
+    display: none;
+
+    &.is-open{
+        display: block;
+    }
+}
+ 
+ 
