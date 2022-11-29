@@ -17,7 +17,7 @@
 
  
 .headers--menu {
-    display: flex;
+    // display: flex;
     margin-left: 93px;
     margin-right: 0px;
     padding-left: 0px;
@@ -25,11 +25,11 @@
 
 &-list {
         list-style: none;
-        display: flex;
         margin-right: 50px;
-
-&:last-child {
-        margin-right: 0px;
+        // display: flex;
+        
+        &:last-child {
+            margin-right: 0px;
 
     }
 
@@ -99,21 +99,21 @@
 }
 
 .headers--cont-position {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     margin: 0px;
 }
 
 .contacts {
 
-    display: none;
+    
     padding: 0px;
     margin-left: auto;
     align-items: center;
 
 &--list {
         list-style: none;
-        display: flex;
+        // display: flex;
     }
 }
 
@@ -180,12 +180,17 @@
     fill: currentColor;
 
 }
+.headers--container-top{
+    display:flex;
+justify-content: space-between;
+    align-items: center;
+    
+    
+}
 
 .headers--nav-button{
-    display:inline-flex ;
-  align-items: center;
-    padding: 0;
-    margin: 0;
+   display: inline-flex;
+    padding: 0px;
     background-color: transparent;
     border: none;
  &:hover
@@ -204,14 +209,14 @@ fill: currentColor;
     fill: currentColor;
 }
 
-.headers--nav-button .icon-crose{
-    display: none;
-}
-.headers--nav-button.is-open .icon-crose{
-    display: block;
+.headers--nav-button .icon-menu{
+    display:none;
 }
 .headers--nav-button.is-open .icon-menu{
-    display: none;
+    display:block;
+}
+.headers--nav-button.is-open .icon-crose{
+    display:none;
 }
 
 .headers--menu-container {
