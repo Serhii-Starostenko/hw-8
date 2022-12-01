@@ -17,16 +17,21 @@
 
  
 .headers--menu {
-    // display: flex;
+    @media screen and ( min-width:768px) {
+    display: flex;
+    }
     margin-left: 93px;
     margin-right: 0px;
     padding-left: 0px;
 
 
 &-list {
+    @media screen and (min-width:768px) {
+            display: flex;
+        }
         list-style: none;
         margin-right: 50px;
-        // display: flex;
+    
         
         &:last-child {
             margin-right: 0px;
@@ -99,8 +104,13 @@
 }
 
 .headers--cont-position {
-    // display: flex;
-    // justify-content: space-between;
+    @media screen and (min-width:768px) {
+            max-width: 768px;
+            display: flex;
+
+            justify-content: space-between;
+
+        }
     margin: 0px;
 }
 
@@ -113,6 +123,10 @@
 
 &--list {
         list-style: none;
+
+        @media screen and (min-width:768px) {
+                display: flex;
+            }
         // display: flex;
     }
 }
@@ -189,10 +203,16 @@ justify-content: space-between;
 }
 
 .headers--nav-button{
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+    
    display: inline-flex;
     padding: 0px;
     background-color: transparent;
     border: none;
+    z-index: 1001;
+    cursor: pointer;
  &:hover
     ,&:focus{
        color: $accent-text-color; 
@@ -210,21 +230,48 @@ fill: currentColor;
 }
 
 .headers--nav-button .icon-menu{
-    display:none;
-}
-.headers--nav-button.is-open .icon-menu{
     display:block;
 }
-.headers--nav-button.is-open .icon-crose{
+.headers--nav-button.is-open .icon-menu{
+    display:none; 
+}
+.headers--nav-button .icon-crose{
     display:none;
 }
+.headers--nav-button.is-open .icon-crose {
+display: block;
+}
+
+
+
 
 .headers--menu-container {
-    display: none;
-
-    &.is-open{
+    @media screen and (min-width:768px) {
         display: block;
     }
+    display: none;
+    @media screen  and (max-width:767px) {
+            position:fixed;
+            z-index: 999;
+            width:100vw;
+            height: 100vh;
+            top: 0px;
+            left: 0px;
+        
+
+            background-color:$background-color ;
+
+        }
+    &.is-open{
+        display: block;
+      
+    }
+
+  @media screen and (min-width:768px){
+
+    position: static;
+    
+  }
 }
  
  
